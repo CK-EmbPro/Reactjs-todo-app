@@ -1,38 +1,89 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  /* border-style: solid; */
+  width: 500px;
+  margin: 90px auto;
+  height: auto; 
+  background-color: rgb(27, 2, 52);
+  box-shadow: 1px 1px 2px 5px rgb(74, 97, 97);
+  color: white;
+  padding-bottom: 4px;
+  border-radius: 10px;
+}
+
+.container h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .todo-form{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  padding-left: 40px;
+  margin: 20px 0 10px 0px;
+  
+}
+
+.container .todo-form input{
+  padding: 3px;
+  font-size: 18px;
+  outline: none;
+  box-shadow: .9px 0.2px 4px 3px rgb(217, 225, 209);
+  border: none;
+  border-radius: 8px;
+  background: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container .todo-form button{
+  width:50px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  color: rgb(25, 52, 52);
+  font-size: 16px;
+  font-weight:bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .list-item{
+  list-style: none;
+  display: flex;
+  margin:  20px 0px 10px 40px;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
+  width: 350px;
+
+}
+
+.container .list-item input{
+  padding: 3px;
+  text-indent: 5px;
+  width: 250px;
+  border: none;
+  background: transparent;
+  color:  whitesmoke;
+  outline: none;
+}
+
+.container .btns-container{
+  display: flex;
+  gap: 13px;
+}
+
+.container .btns-container .task-button{
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+
+.container .btns-container .task-button i{
+  transform: scale(1.4);
 }
